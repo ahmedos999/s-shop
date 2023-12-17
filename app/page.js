@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import ad from '../public/ad.png'
+import ProductsHeader from './components/products'
+import Productlist from './components/productlist'
 
 export default function Home() {
   return (
@@ -21,6 +23,10 @@ export default function Home() {
         <div className="col-span-3 mt-10">
           <Image src={ad} alt='ad' height={220} quality={100} placeholder='blur'></Image>
         </div>
+      </div>
+      <div className='ml-28'>
+      <ProductsHeader></ProductsHeader>
+      <Productlist></Productlist>
       </div>
     </main>
   )

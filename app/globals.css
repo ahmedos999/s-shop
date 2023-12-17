@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 body{
-  margin-top: 10px;
+  @apply mt-10;
+}
+div>ul>li{
+  @apply mb-1;
 }
