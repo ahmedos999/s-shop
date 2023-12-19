@@ -7,7 +7,8 @@ import { MdOutlinePreview } from "react-icons/md";
 
 export default function Productlist() {
   return (
-    <div className="mt-10 flex justify-between">
+    <div>
+        <div className="mt-10 flex justify-between">
     <div className=''>
         <div className="container w-56 bg-gray-100 p-1 rounded-sm">
             <div className='relative'>
@@ -173,7 +174,13 @@ export default function Productlist() {
         <p className='text-gray-500 ml-2'>(88)</p>
         </div>
     </div>
-   
+    </div>
+    <div className='flex justify-center'>
+    <button className='py-2 px-10 mx-auto bg-red-500 text-white rounded mt-10'>View all Products</button>
+    </div>
+
+    <div className='flex justify-center border-t-2 bg-gray-800 my-5 mr-10'>
+    </div>
     </div>
   )
 }
