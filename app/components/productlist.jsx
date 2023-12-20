@@ -1,14 +1,19 @@
+"use client"
+
 import Image from 'next/image'
-import React from 'react'
+import React ,{useRef} from 'react'
 import img1 from '../../public/ps.png'
 import { FaStar } from "react-icons/fa6";
 import { MdFavoriteBorder } from "react-icons/md";
 import { MdOutlinePreview } from "react-icons/md";
+import { useDraggable } from "react-use-draggable-scroll";
 
 export default function Productlist() {
+    const ref = useRef();
+    const {events} = useDraggable(ref)
   return (
     <div>
-        <div className="mt-10 grid gap-x-6 grid-flow-col overflow-x-auto snap-inline hidescoll">
+        <div className="mt-10 grid gap-x-6 grid-flow-col overflow-x-auto hidescoll"{...events} ref={ref}>
     <div className='shadow-md p-3'>
         <div className="container w-56 bg-gray-100 p-1 rounded-sm ">
             <div className='relative'>

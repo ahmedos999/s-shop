@@ -9,12 +9,12 @@ div>ul>li{
   @apply mb-1;
 }
 
-.snap-inline{
+/* .snap-inline{
   scroll-snap-type:inline mandatory;
 }
 .snap-inline > *{
   scroll-snap-align: start;
-}
+} */
 .hidescoll::-webkit-scrollbar {
   display: none;
 }
