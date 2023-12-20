@@ -8,3 +8,20 @@ body{
 div>ul>li{
   @apply mb-1;
 }
+
+.snap-inline{
+  scroll-snap-type:inline mandatory;
+}
+.snap-inline > *{
+  scroll-snap-align: start;
+}
+.hidescoll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hidescoll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
