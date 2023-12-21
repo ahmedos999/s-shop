@@ -9,7 +9,7 @@ export default function Header(props) {
             
         </div>
         
-        <div className="flex text-3xl font-bold mt-5">
+        <div className="flex text-3xl font-bold mt-5 font-main">
         <h2>{props.subtitle}</h2>
         <h2 className='ml-10 '>{props.timer}</h2>
         </div>

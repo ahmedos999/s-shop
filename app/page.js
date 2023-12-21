@@ -4,6 +4,7 @@ import Header from './components/header'
 import Productlist from './components/productlist'
 import Categories from './components/categories'
 
+
 export default function Home() {
   return (
     <main>

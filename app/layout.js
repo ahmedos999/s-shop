@@ -5,7 +5,9 @@ import { Inter, Rubik } from 'next/font/google'
 //components
 import Navbar from './components/Navbar'
 
-const rubik = Rubik({ subsets: ['latin'] })
+import { Poppins } from 'next/font/google'
+
+const poppins = Poppins({ subsets: ['latin'],weight: ['400', '700'], })
 
 export const metadata = {
   title: 'Create Next App',
@@ -16,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       
-      <body className={rubik.className}>
+      <body className={poppins.className}>
       <Navbar></Navbar>
         {children}
         </body>
