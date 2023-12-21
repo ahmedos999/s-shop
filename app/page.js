@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import ad from '../public/ad.png'
-import Header from './components/products'
+import Header from './components/header'
 import Productlist from './components/productlist'
 import Categories from './components/categories'
 
@@ -27,6 +27,8 @@ export default function Home() {
       </div>
       <div className='ml-28'>
       <Header title="Today's" subtitle='Flash Sales' timer='03:23:19:56'></Header>
+      <Productlist></Productlist>
+      <Header title="This Month" subtitle='Best Salling Products'></Header>
       <Productlist></Productlist>
       <Header title="Categories" subtitle='Browse By Category'></Header>
       <Categories></Categories>
