@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React ,{useRef} from 'react'
-import img1 from '../../public/ps.png'
+import img1 from '../../public/jordan.png'
 import { FaStar } from "react-icons/fa6";
 import { MdFavoriteBorder } from "react-icons/md";
 import { MdOutlinePreview } from "react-icons/md";
@@ -32,7 +32,7 @@ export default function Productlist() {
             
             
         </div>
-        <h4>Playstation 4 controller</h4>
+        <h4>Jordan Nike Shoes</h4>
         <div className='flex'>
         <p className='text-red-500'>$120</p>
         <p className='text-gray-500 line-through ml-2'>$120</p>
@@ -65,7 +65,7 @@ export default function Productlist() {
             
             
         </div>
-        <h4>Playstation 4 controller</h4>
+        <h4>Jordan Nike Shoes</h4>
         <div className='flex'>
         <p className='text-red-500'>$120</p>
         <p className='text-gray-500 line-through ml-2'>$120</p>
@@ -98,7 +98,7 @@ export default function Productlist() {
             
             
         </div>
-        <h4>Playstation 4 controller</h4>
+        <h4>Jordan Nike Shoes</h4>
         <div className='flex'>
         <p className='text-red-500'>$120</p>
         <p className='text-gray-500 line-through ml-2'>$120</p>
@@ -131,7 +131,7 @@ export default function Productlist() {
             
             
         </div>
-        <h4>Playstation 4 controller</h4>
+        <h4>Jordan Nike Shoes</h4>
         <div className='flex'>
         <p className='text-red-500'>$120</p>
         <p className='text-gray-500 line-through ml-2'>$120</p>
@@ -164,7 +164,7 @@ export default function Productlist() {
             
             
         </div>
-        <h4>Playstation 4 controller</h4>
+        <h4>Jordan Nike Shoes</h4>
         <div className='flex'>
         <p className='text-red-500'>$120</p>
         <p className='text-gray-500 line-through ml-2'>$120</p>
@@ -197,7 +197,7 @@ export default function Productlist() {
             
             
         </div>
-        <h4>Playstation 4 controller</h4>
+        <h4>Jordan Nike Shoes</h4>
         <div className='flex'>
         <p className='text-red-500'>$120</p>
         <p className='text-gray-500 line-through ml-2'>$120</p>
@@ -230,7 +230,7 @@ export default function Productlist() {
             
             
         </div>
-        <h4>Playstation 4 controller</h4>
+        <h4>Jordan Nike Shoes</h4>
         <div className='flex'>
         <p className='text-red-500'>$120</p>
         <p className='text-gray-500 line-through ml-2'>$120</p>
