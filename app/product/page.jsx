@@ -8,7 +8,20 @@ import { CiCircleCheck } from "react-icons/ci";
 export default function Product() {
   return (
     <div className='flex flex-row'>
-        <div className='basis-5/12 h-4/6'><Image src={img}></Image></div>
+        <div className='basis-5/12 h-4/6'>
+            <Image src={img}></Image>
+            <div className='flex justify-center'>
+                <div className="border w-20 h-20 p-2">
+                <Image src={img}></Image>
+                </div>
+                <div className="border w-20 h-20 p-2 mx-5">
+                <Image src={img}></Image>
+                </div>
+                <div className="border w-20 h-20 p-2">
+                <Image src={img}></Image>
+                </div>
+            </div>
+            </div>
         <div className='basis-7/12'>
             <div className='flex items-center justify-between mt-8 mx-10'>
                 <h1 className='text-6xl font-main'>Jordan Nike Shoes</h1>

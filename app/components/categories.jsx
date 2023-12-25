@@ -64,7 +64,7 @@ export default function Categories() {
 
 
         <div className='flex justify-center'>
-            <button className='py-2 px-10 mx-auto bg-red-500 text-white rounded mt-10'>View all Products</button>
+            <button className='py-2 px-10 mx-auto bg-red-500 text-white rounded mt-10'>View all Categories</button>
         </div>
 
         <div className='flex justify-center border-t-2 bg-gray-800 my-5 mr-10'>
