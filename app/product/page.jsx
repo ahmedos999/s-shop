@@ -1,4 +1,6 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import img from '../../public/jordan.png'
 import Image from 'next/image'
 import { MdFavoriteBorder } from "react-icons/md";
@@ -6,6 +8,16 @@ import { FaStar } from "react-icons/fa6";
 import { CiCircleCheck } from "react-icons/ci";
 
 export default function Product() {
+    const [counter,setCounter] = useState(0)
+
+    function increase(){
+        if(counter<10)
+        setCounter(counter+1)
+    }
+    function decrease(){
+        if(counter>0)
+        setCounter(counter-1)
+    }
   return (
     <div className='flex flex-row'>
         <div className='basis-5/12 h-4/6'>
@@ -98,9 +110,9 @@ export default function Product() {
             <div className='flex items-center justify-between mx-10 mt-8'>
                 <div className='flex items-center'>
                 <p>QTY</p>
-                <button className='w-10 h-10 border p-2 ml-4 rounded-s'>-</button>
-                <div className='w-10 h-10 border p-2 text-center'>0</div>
-                <button className='w-10 h-10 border p-2 rounded-e'>+</button>
+                <button className='w-10 h-10 border p-2 ml-4 rounded-s' onClick={decrease}>-</button>
+                <div className='w-10 h-10 border p-2 text-center'>{counter}</div>
+                <button className='w-10 h-10 border p-2 rounded-e' onClick={increase}>+</button>
                 </div>
                 <div className='flex'>
                     <button className=' bg-red-500 py-2 px-12 h-10 text-white rounded mr-4'>Buy now</button>
