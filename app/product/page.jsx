@@ -10,6 +10,8 @@ import { CiCircleCheck } from "react-icons/ci";
 export default function Product() {
     const [counter,setCounter] = useState(0)
 
+    const [tab,setTab] = useState('Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos nulla maxime laborum doloremque velit beatae odio! Esse eius, dolor sed maxime, eligendi alias libero dicta impedit quisquam expedita excepturi magni, incidunt quos labore exercitationem cumque eaque temporibus reprehenderit eveniet nisi!')
+
     function increase(){
         if(counter<10)
         setCounter(counter+1)
@@ -32,6 +34,17 @@ export default function Product() {
         }
         event.target.parentNode.className += ' border-gray-500'
       }
+
+      const changeTab = (event,text) => {
+        for(var child of event.target.parentNode.parentNode.children){
+            console.log(child.firstChild.className)
+           child.firstChild.className = 'inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-red-500 dark:hover:text-gray-200'
+        }
+        event.target.className = 'inline-block p-4 rounded-t-lg active bg-red-500 text-white'
+        setTab(text)
+      }
+
+
 
   return (
     <div className='flex flex-row'>
@@ -139,24 +152,26 @@ export default function Product() {
 
 
             <div className='mt-8 mx-8'>
-            <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
-                <li class="me-2">
-                    <a href="#" aria-current="page" class="inline-block p-4 rounded-t-lg active bg-red-500 text-white">Product Details</a>
+            <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+                <li className="me-2">
+                    <a  aria-current="page" className="inline-block p-4 rounded-t-lg active bg-red-500 text-white" onClick={(e)=>{changeTab(e,'this the new jordan shoes that comes with extra layer or thickess for more protection and relife it give you comfort and best experance this the new jordan shoes that comes with extra layer or thickess for more protection and relife it give you comfort and best experance this the new jordan shoes that comes with extra layer or thickess for more protection and relife it give you comfort and best experance')}}>Product Details</a>
                 </li>
-                <li class="me-2">
-                    <a href="#" className="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-red-500 dark:hover:text-gray-200">Reviews</a>
+                <li className="me-2">
+                    <a  className="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-red-500 dark:hover:text-gray-200" onClick={(e)=>{changeTab(e,'We have been ranked as the best in our reigon for out prices and quailty We have been ranked as the best in our reigon for out prices and quailty We have been ranked as the best in our reigon for out prices and quailty')}}>Reviews</a>
                 </li>
-                <li class="me-2">
-                    <a href="#" className="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-red-500 dark:hover:text-gray-200">FAQ</a>
+                <li className="me-2">
+                    <a  className="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-red-500 dark:hover:text-gray-200" onClick={(e)=>{changeTab(e,'Are these the Best prices? ofcourse the are we care for our customers Are these the Best prices? ofcourse the are we care for our customers Are these the Best prices? ofcourse the are we care for our customers')}}>FAQ</a>
                 </li>
-                <li class="me-2">
-                    <a href="#" className="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-red-500 dark:hover:text-gray-200">Contacts</a>
+                <li className="me-2">
+                    <a  className="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-red-500 dark:hover:text-gray-200" onClick={(e)=>{changeTab(e,'Here is how you can contact us in @e-shop in facebook Twitter instargram Here is how you can contact us in @e-shop in facebook Twitter instargram Here is how you can contact us in @e-shop in facebook Twitter instargram')}}>
+                        Contacts</a>
                 </li>
                 
             </ul>
-            <div className='mt-4'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos nulla maxime laborum doloremque velit beatae odio! Esse eius, dolor sed maxime, eligendi alias libero dicta impedit quisquam expedita excepturi magni, incidunt quos labore exercitationem cumque eaque temporibus reprehenderit eveniet nisi!
+            <div className='my-4 '>
+                {tab}
             </div>
+            
             </div>
         </div>
     </div>
