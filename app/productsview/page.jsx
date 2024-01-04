@@ -27,7 +27,9 @@ export default function Productsview() {
         {id:'7',name:'Gi Nike Shoes',img:img7,price:120},
     ]
   return (
-    <div className='grid grid-cols-5 gap-1'>
+    <>
+    <div className='my-10 text-2xl mx-4'>Men's shoes</div>
+    <div className='grid grid-cols-5 gap-1 mx-6'>
         {
             items.map((e)=>
                 (
@@ -69,5 +71,6 @@ export default function Productsview() {
             )
         }
     </div>
+    </>
   )
 }
