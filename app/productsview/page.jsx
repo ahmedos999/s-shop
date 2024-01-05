@@ -29,6 +29,12 @@ export default function Productsview() {
   return (
     <>
     <div className='my-10 text-2xl mx-4'>Men's shoes</div>
+    <div className='mx-4'><ul className='flex gap-2'>
+        <li className='bg-gray-200 rounded-3xl px-3'>Price</li>
+        <li className='bg-gray-200 rounded-3xl px-3'>Review</li>
+        <li className='bg-gray-200 rounded-3xl px-3'>Color</li>
+        <li className='bg-gray-200 rounded-3xl px-3'>Offer</li>
+    </ul></div>
     <div className='grid grid-cols-5 gap-1 mx-6'>
         {
             items.map((e)=>
