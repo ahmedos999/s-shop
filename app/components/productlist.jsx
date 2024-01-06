@@ -16,7 +16,8 @@ import { FaStar } from "react-icons/fa6";
 import { MdFavoriteBorder } from "react-icons/md";
 import { MdOutlinePreview } from "react-icons/md";
 import { useDraggable } from "react-use-draggable-scroll";
-import Link from 'next/link';
+import Link from 'next/link'
+
 
 export default function Productlist() {
     const ref = useRef();
@@ -76,7 +77,7 @@ export default function Productlist() {
             }
     </div>
     <div className='flex justify-center'>
-    <button className='py-2 px-10 mx-auto bg-red-500 text-white rounded mt-10'>View all Products</button>
+    <button className='py-2 px-10 mx-auto bg-red-500 text-white rounded mt-10'><Link href={`/productsview`}>View all Products</Link></button>
     </div>
 
     <div className='flex justify-center border-t-2 bg-gray-800 my-5 mr-10'>
