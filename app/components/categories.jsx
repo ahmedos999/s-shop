@@ -52,13 +52,6 @@ export default function Categories() {
                     <FaHeadphones className='text-5xl'></FaHeadphones>
                     <p>Headphones</p>
                 </div>
-                
-                
-                
-        
-        
-        
-        
              
     </div>
 
