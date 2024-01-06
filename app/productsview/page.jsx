@@ -38,10 +38,10 @@ export default function Productsview() {
     ]
   return (
     <>
-    <div className='my-10 text-2xl mx-4'>Men's shoes</div>
+    <div className='my-10 text-2xl ml-96 font-bold underline'>Men's shoes</div>
     <div className="grid grid-cols-5 mx-10">
         <div className="filter">
-            <h2 className='text-2xl font-bold border-b pb-1 mb-1'>Brands</h2>
+            <h2 className='text-3xl font-bold border-b pb-1 mb-1 font-main'>Brands</h2>
             <ul>
                 <li>
                     <div class="flex items-center justify-between">
@@ -74,7 +74,7 @@ export default function Productsview() {
                     </div>
                 </li>
             </ul>
-            <h2 className='text-2xl font-bold border-b pb-1 mb-1'>Ratings</h2>
+            <h2 className='text-3xl font-bold border-b pb-1 mb-1 font-main'>Ratings</h2>
             <ul>
                 <li className='my-2'>
                     <div class="flex items-center justify-between">
@@ -101,7 +101,7 @@ export default function Productsview() {
                     </div>
                 </li>
             </ul>
-            <h2 className='text-2xl font-bold my-2'>Prices range</h2>
+            <h2 className='text-3xl font-bold my-2 border-b pb-1 mb-1 font-main'>Prices range</h2>
             <div className="relative mb-6">
                 <label for="labels-range-input" className="sr-only">Labels range</label>
                 <input id="labels-range-input" type="range" value={rangeValue} min={100} max={1500} onChange={handleRangeChange} className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"/>

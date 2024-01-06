@@ -60,8 +60,8 @@ export default function Productlist() {
                     </div>
                     <h4>{e.name}</h4>
                     <div className='flex'>
-                    <p className='text-red-500'>$ {e.price}</p>
-                    <p className='text-gray-500 line-through ml-2'>$210</p>
+                    <p className='text-red-500 font-bold'>${e.price}</p>
+                    <p className='text-gray-500 line-through ml-2 text-sm'>$210</p>
                     </div>
             
                     <div className='flex text-yellow-500 items-center'>
