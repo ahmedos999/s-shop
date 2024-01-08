@@ -70,7 +70,7 @@ export default function Productlist() {
                     <FaStar />
                     <FaStar />
                     <FaStar />
-                    <p className='text-gray-500 ml-2'>(88)</p>
+                    <p className='text-gray-500 ml-2 text-sm'>(88)</p>
                     </div>
                 </div>
                 ))
