@@ -2,6 +2,7 @@ import React from 'react'
 import { MdFavoriteBorder } from "react-icons/md";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
@@ -28,7 +29,8 @@ export default function Navbar() {
       </div>
     </div>
     <MdFavoriteBorder className="ml-5 text-2xl"></MdFavoriteBorder>
-    <MdOutlineShoppingCart  className="ml-2 text-2xl"></MdOutlineShoppingCart  >
+    <Link href={`/shoppingcart`}><MdOutlineShoppingCart  className="ml-2 text-2xl"></MdOutlineShoppingCart  ></Link>
+    
         </div>
     </nav>
   )
