@@ -7,7 +7,7 @@ export default function ShoppingCart() {
     <div className='m-10'>
         <h2 className='my-10 text-3xl font-main font-bold'>You shopping Cart</h2>
         <div className="grid grid-cols-12">
-            <div className='col-span-8 flex items-center justify-between shadow p-2'>
+            <div className='col-span-8 flex items-center justify-between shadow px-2'>
             <Image src={img} height={200}></Image>
             <div>
                 <h2>Jordan Nike shoes</h2>
