@@ -3,6 +3,7 @@ import ad from '../public/ad.png'
 import Header from './components/header'
 import Productlist from './components/productlist'
 import Categories from './components/categories'
+import Footer from './components/footer'
 
 
 export default function Home() {
@@ -33,7 +34,9 @@ export default function Home() {
       <Productlist></Productlist>
       <Header title="Categories" subtitle='Browse By Category'></Header>
       <Categories></Categories>
+      
       </div>
+      <Footer></Footer>
     </main>
   )
 }
