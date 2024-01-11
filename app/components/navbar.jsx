@@ -22,7 +22,7 @@ export default function Navbar() {
       <input
         type="text"
         placeholder="What are you looking for?"
-        className="border border-gray-300 rounded-md py-2 pl-10 pr-4 border-none focus:border-gray-200 w-full bg-gray-100 "
+        className="border border-gray-300 rounded-md py-2 pl-10 pr-4 border-none focus:border-gray-200 w-full bg-gray-100 text-sm"
       />
       <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
         <CiSearch></CiSearch>

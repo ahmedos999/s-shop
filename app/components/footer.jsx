@@ -6,7 +6,7 @@ import { FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className='bg-gray-900 grid grid-cols-4 gap-2 mt-4 p-4 text-white'>
+    <div className='bg-gray-900 grid grid-cols-4 gap-2 mt-4 p-4 text-white pb-6 px-10'>
         <div>
             <h2 className='font-main text-3xl'>Exclusive</h2>
             <p className='text-lg my-2'>Follow us to no not miss promotinal news</p>
