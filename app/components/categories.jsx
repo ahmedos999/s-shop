@@ -12,46 +12,41 @@ import { useDraggable } from "react-use-draggable-scroll";
 export default function Categories() {
     const ref = useRef();   
   const { events } = useDraggable(ref);
+  const items = [
+    {icon:<IoIosPhonePortrait className='text-5xl'></IoIosPhonePortrait>,
+    name:'Phones'    
+},
+{icon:<FaComputer className='text-5xl'></FaComputer>,
+    name:'Computer'    
+},
+{icon:<IoWatch className='text-5xl'></IoWatch>,
+    name:'Watches'    
+},
+{icon:<IoCamera className='text-5xl'></IoCamera>,
+    name:'Camera'    
+},
+{icon:<FaHeadphones className='text-5xl'></FaHeadphones>,
+    name:'HeadPhones'    
+},
+{icon:<IoIosPhonePortrait className='text-5xl'></IoIosPhonePortrait>,
+    name:'Phones'    
+},
+  ]
   return (
     <div>
         <div className="mt-10 grid gap-x-6 grid-flow-col overflow-x-auto  hidescoll" {...events} ref={ref}>
         
-                <div className="container w-56 px-18 py-12 rounded-sm border-2 border-gray-200 grid place-items-center">
-                    <IoIosPhonePortrait className='text-5xl'></IoIosPhonePortrait>
-                    <p>Phones</p>
-                </div>
+            {
+                items.map((item)=>(<div className="container w-56 px-18 py-12 rounded-sm border-2 border-gray-200 grid place-items-center hover:bg-slate-100 hover:border-gray-400">
+                {item.icon}
+                <p>{item.name}</p>
+            </div>))
+            }
 
-                <div className="container w-56 px-18 py-12 rounded-sm border-2 border-gray-200 grid place-items-center">
-                    <FaComputer className='text-5xl'></FaComputer>
-                    <p>Computers</p>
-                </div>
-
-                <div className="container w-56 px-18 py-12 rounded-sm border-2 border-gray-200 grid place-items-center">
-                    <IoWatch className='text-5xl'></IoWatch>
-                    <p>Watches</p>
-                </div>
-
-                <div className="container w-56 px-18 py-12 rounded-sm border-2 border-gray-200 grid place-items-center">
-                    <IoCamera className='text-5xl'></IoCamera>
-                    <p>Cameras</p>
-                </div>
-        
-                <div className="container w-56 px-18 py-12 rounded-sm border-2 border-gray-200 grid place-items-center">
+                {/* <div className="container w-56 px-18 py-12 rounded-sm border-2 border-gray-200 grid place-items-center">
                     <FaHeadphones className='text-5xl'></FaHeadphones>
                     <p>Headphones</p>
-                </div>
-                <div className="container w-56 px-18 py-12 rounded-sm border-2 border-gray-200 grid place-items-center">
-                    <FaHeadphones className='text-5xl'></FaHeadphones>
-                    <p>Headphones</p>
-                </div>
-                <div className="container w-56 px-18 py-12 rounded-sm border-2 border-gray-200 grid place-items-center">
-                    <FaHeadphones className='text-5xl'></FaHeadphones>
-                    <p>Headphones</p>
-                </div>
-                <div className="container w-56 px-18 py-12 rounded-sm border-2 border-gray-200 grid place-items-center">
-                    <FaHeadphones className='text-5xl'></FaHeadphones>
-                    <p>Headphones</p>
-                </div>
+                </div> */}
              
     </div>
 
