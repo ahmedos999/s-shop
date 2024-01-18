@@ -43,10 +43,7 @@ export default function Categories() {
             </div>))
             }
 
-                {/* <div className="container w-56 px-18 py-12 rounded-sm border-2 border-gray-200 grid place-items-center">
-                    <FaHeadphones className='text-5xl'></FaHeadphones>
-                    <p>Headphones</p>
-                </div> */}
+               
              
     </div>
 
