@@ -3,7 +3,7 @@ import React from 'react'
 export default function Payment() {
   return (
         <div className="grid grid-cols-2">
-            <div className='py-10 px-40'><h2 className='font-main'>Payment Details</h2>
+            <div className='py-10 px-40'><h2 className='font-main text-3xl font-bold mb-4'>Payment Details</h2>
             <h4>Payment method</h4>
             <div className='py-2 px-10 border-2 border-black text-center my-2'>
                 Debit or Credit Card
@@ -73,7 +73,9 @@ export default function Payment() {
     <option>France</option>
     <option>Germany</option>
   </select>
-      
+      <div className='text-center bg-red-500 p-2 rounded my-2 text-slate-50 '>
+        Place order
+      </div>
             </div>
             <div></div>
         </div>
