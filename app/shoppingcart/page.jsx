@@ -87,16 +87,20 @@ export default function ShoppingCart() {
             
             <div className='col-span-4 mx-4 px-4 shadow-lg flex flex-col justify-between self-start'>
             <div className='flex justify-between border-b my-4'>
-            <h2 className='text-2xl font-main font-bold'>Total</h2>
+            <h2 className='text-lg '>SubTotal</h2>
             <p className='text-lg'>$149.00</p>
             </div>
             <div className='flex justify-between border-b my-4'>
-            <h2 className='text-2xl font-main font-bold'>Tax %15</h2>
+            <h2 className='text-lg '>Tax %15</h2>
             <p className='text-lg'>${149*15/100}</p>
             </div>
-            <div className='flex justify-between  my-4 '>
-            <h2 className='text-2xl font-main font-bold text-red-500'>Total</h2>
+            <div className='flex justify-between my-4 font-bold'>
+            <h2 className='text-2xl font-main    text-red-500'>Total</h2>
             <p className='text-lg'>${(149*15/100)+149}</p>
+            </div>
+
+            <div className='text-center my-2 bg-red-500 text-white p-1 rounded'>
+            proceed to payment
             </div>
             
             </div>
