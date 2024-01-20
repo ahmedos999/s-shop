@@ -2,8 +2,9 @@ import React from 'react'
 
 export default function Payment() {
   return (
-        <div className="grid grid-cols-2">
-            <div className='py-10 px-32'><h2 className='font-main text-3xl font-bold mb-4'>Payment Details</h2>
+        <div className="grid grid-cols-12">
+            <div className='py-10 px-52 col-span-8'>
+              <h2 className='font-main text-3xl font-bold mb-4'>Payment Details</h2>
             <h4>Payment method</h4>
             <div className='py-2 px-10 border-2 border-black text-center my-2'>
                 Debit or Credit Card
@@ -77,7 +78,26 @@ export default function Payment() {
         Place order
       </div>
             </div>
-            <div></div>
+            <div className='py-10 px-20 bg-gray-200 col-span-4'>
+              <h2 className='text-xl my-2 font-semibold'>Order Summary</h2>
+              <div className="flex justify-between mt-4">
+              <p>Jordan nike shoes</p>
+              <p>$16.00</p>
+              </div>
+              <p className='text-gray-600 py-2 border-b border-black'>Qty:1</p>
+              <div className="flex my-2 py-2 border-b border-black">
+              <p>Subtotal</p>
+              <p>$16.00</p>
+              </div>
+              <div className="flex justify-between my-2">
+              <p>Tax</p>
+              <p>${16.00*15/100}</p>
+              </div>
+              <div className="flex justify-between font-semibold text-lg my-2">
+              <p>Total</p>
+              <p>${(16.00*15/100)+16.00}</p>
+              </div>
+            </div>
         </div>
   )
 }
