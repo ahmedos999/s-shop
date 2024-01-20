@@ -99,7 +99,7 @@ export default function ShoppingCart() {
             <p className='text-lg'>${(149*15/100)+149}</p>
             </div>
 
-            <div className='text-center my-2 bg-red-500 text-white p-1 rounded'>
+            <div className='text-center my-2 bg-red-500 text-white p-1 rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105'>
             proceed to payment
             </div>
             
