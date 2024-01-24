@@ -88,12 +88,12 @@ export default function Payment() {
               <p>Jordan nike shoes</p>
               <p>$16.00</p>
               </div>
-              <p className='text-gray-600 py-2 border-b border-black'>Qty:1</p>
+              <p className='text-gray-600 py-2 border-b border-black text-sm'>Qty:1</p>
               <div className="flex my-2 py-2 border-b border-black">
               <p>Subtotal</p>
               <p>$16.00</p>
               </div>
-              <div className="flex justify-between my-2">
+              <div className="flex justify-between my-2 text-sm">
               <p>Tax</p>
               <p>${16.00*15/100}</p>
               </div>
