@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaPaypal } from "react-icons/fa";
+import { FaCreditCard } from "react-icons/fa";
 
 export default function Payment() {
   return (
@@ -6,10 +8,12 @@ export default function Payment() {
             <div className='py-10 px-52 col-span-8'>
               <h2 className='font-main text-3xl font-bold mb-4'>Payment Details</h2>
             <h4>Payment method</h4>
-            <div className='py-2 px-10 border-2 border-black text-center my-2'>
+            <div className='py-2 border-2 flex items-center justify-center font-bold my-2 border-gray-600'>
+            <FaCreditCard className='text-blue-800 text-2xl mx-2'/>
                 Debit or Credit Card
             </div>
-            <div className='py-2 px-10 border-2 text-center my-2'>
+            <div className='py-2 border-2 flex items-center justify-center font-bold'>
+              <FaPaypal className='text-blue-800 text-2xl mx-2'/>
                 Paypal
             </div>
             <p className='my-2'>Name on card</p>

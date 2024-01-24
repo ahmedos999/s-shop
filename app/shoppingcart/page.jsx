@@ -2,6 +2,7 @@ import React from 'react'
 import img from '../../public/jordan.png'
 import Image from 'next/image'
 
+
 export default function ShoppingCart() {
 
     
