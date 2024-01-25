@@ -24,7 +24,7 @@ export default function Home() {
         </ul>
         </div>
         <div className="col-span-8 mt-10">
-          <Image src={ad} alt='ad' quality={100} placeholder='blur' ></Image>
+          <Image src={ad} alt='ad' quality={100} placeholder='blur'></Image>
         </div>
       </div>
       <div className='ml-28'>

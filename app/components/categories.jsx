@@ -13,22 +13,32 @@ export default function Categories() {
     const ref = useRef();   
   const { events } = useDraggable(ref);
   const items = [
-    {icon:<IoIosPhonePortrait className='text-5xl'></IoIosPhonePortrait>,
+    {
+    id:1,    
+    icon:<IoIosPhonePortrait className='text-5xl'></IoIosPhonePortrait>,
     name:'Phones'    
 },
 {icon:<FaComputer className='text-5xl'></FaComputer>,
     name:'Computer'    
 },
-{icon:<IoWatch className='text-5xl'></IoWatch>,
+{
+    id:2,
+    icon:<IoWatch className='text-5xl'></IoWatch>,
     name:'Watches'    
 },
-{icon:<IoCamera className='text-5xl'></IoCamera>,
+{
+    id:3,
+    icon:<IoCamera className='text-5xl'></IoCamera>,
     name:'Camera'    
 },
-{icon:<FaHeadphones className='text-5xl'></FaHeadphones>,
+{
+    id:4,
+    icon:<FaHeadphones className='text-5xl'></FaHeadphones>,
     name:'HeadPhones'    
 },
-{icon:<IoIosPhonePortrait className='text-5xl'></IoIosPhonePortrait>,
+{
+    id:5,
+    icon:<IoIosPhonePortrait className='text-5xl'></IoIosPhonePortrait>,
     name:'Phones'    
 },
   ]
@@ -37,7 +47,7 @@ export default function Categories() {
         <div className="mt-10 grid gap-x-6 grid-flow-col overflow-x-auto  hidescoll" {...events} ref={ref}>
         
             {
-                items.map((item)=>(<div className="container w-56 px-18 py-12 rounded-sm border-2 border-gray-200 grid place-items-center hover:bg-slate-100 hover:border-gray-400">
+                items.map((item)=>(<div key={item.id} className="container w-56 px-18 py-12 rounded-sm border-2 border-gray-200 grid place-items-center hover:bg-slate-100 hover:border-gray-400">
                 {item.icon}
                 <p>{item.name}</p>
             </div>))
