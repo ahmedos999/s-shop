@@ -6,6 +6,7 @@ import { Inter, Rubik } from 'next/font/google'
 import Navbar from './components/Navbar'
 
 import { Poppins } from 'next/font/google'
+import ReduxProvider from '@/redux/provider'
 
 const poppins = Poppins({ subsets: ['latin'],weight: ['400', '700'], })
 
@@ -18,8 +19,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
+        <ReduxProvider>
         <Navbar></Navbar>
         {children}
+        </ReduxProvider>
         </body>
     </html>
   )

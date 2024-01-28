@@ -6,20 +6,34 @@ import Image from 'next/image'
 import { MdFavoriteBorder } from "react-icons/md";
 import { FaStar } from "react-icons/fa6";
 import { CiCircleCheck } from "react-icons/ci";
+import { useSelector } from 'react-redux';
+
+import { useDispatch } from 'react-redux';
+import { increment,decrement } from '../../redux/features/counter';
 
 export default function Product() {
-    const [counter,setCounter] = useState(0)
+    // const [counter,setCounter] = useState(0)
+
+    const rcounter = useSelector((state) => state.counter);
+    const dispatch = useDispatch();
 
     const [tab,setTab] = useState('Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos nulla maxime laborum doloremque velit beatae odio! Esse eius, dolor sed maxime, eligendi alias libero dicta impedit quisquam expedita excepturi magni, incidunt quos labore exercitationem cumque eaque temporibus reprehenderit eveniet nisi!')
 
-    function increase(){
-        if(counter<10)
-        setCounter(counter+1)
-    }
-    function decrease(){
-        if(counter>0)
-        setCounter(counter-1)
-    }
+    // function increase(){
+    //     if(counter<10)
+    //     setCounter(counter+1)
+    // }
+    // function decrease(){
+    //     if(counter>0)
+    //     setCounter(counter-1)
+    // }
+    const handleIncrement = () => {
+        dispatch(increment());
+      };
+
+      const handleDecrement = () => {
+        dispatch(decrement());
+      };
     
     const changeSize = event => {
         for(var child of event.target.parentNode.parentNode.children){
@@ -138,9 +152,9 @@ export default function Product() {
             <div className='flex items-center justify-between mx-10 mt-8'>
                 <div className='flex items-center'>
                 <p>QTY</p>
-                <button className='w-10 h-10 border p-2 ml-4 rounded-s hover:bg-slate-100' onClick={decrease}>-</button>
-                <div className='w-10 h-10 border p-2 text-center'>{counter}</div>
-                <button className='w-10 h-10 border p-2 rounded-e hover:bg-slate-100' onClick={increase}>+</button>
+                <button className='w-10 h-10 border p-2 ml-4 rounded-s hover:bg-slate-100' onClick={handleDecrement}>-</button>
+                <div className='w-10 h-10 border p-2 text-center'>{rcounter}</div>
+                <button className='w-10 h-10 border p-2 rounded-e hover:bg-slate-100' onClick={handleIncrement}>+</button>
                 </div>
                 <div className='flex'>
                     <button className=' bg-red-500 py-2 px-12 h-10 text-white rounded mr-4 hover:bg-red-600'>Buy now</button>

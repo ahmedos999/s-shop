@@ -1,10 +1,28 @@
+'use client'
+
+
 import React from 'react'
 import img from '../../public/jordan.png'
 import Image from 'next/image'
 
+import { useSelector } from 'react-redux';
+
+import { useDispatch } from 'react-redux';
+import { increment,decrement } from '../../redux/features/counter';
+
 
 export default function ShoppingCart() {
 
+    const rcounter = useSelector((state) => state.counter);
+    const dispatch = useDispatch();
+
+    const handleIncrement = () => {
+        dispatch(increment());
+      };
+
+      const handleDecrement = () => {
+        dispatch(decrement());
+      };
     
   return (
     <div className='m-10'>
@@ -25,9 +43,9 @@ export default function ShoppingCart() {
             </div>
             <div className='flex items-center justify-between'>
                 <div className='flex items-center'>
-                <button className='w-10 h-10 border p-2 ml-4 rounded-s hover:bg-slate-100' >-</button>
-                <div className='w-10 h-10 border p-2 text-center'>0</div>
-                <button className='w-10 h-10 border p-2 rounded-e hover:bg-slate-100'>+</button>
+                <button className='w-10 h-10 border p-2 ml-4 rounded-s hover:bg-slate-100' onClick={handleDecrement}>-</button>
+                <div className='w-10 h-10 border p-2 text-center'>{rcounter}</div>
+                <button className='w-10 h-10 border p-2 rounded-e hover:bg-slate-100' onClick={handleIncrement}>+</button>
                 </div>
                 
             </div>
