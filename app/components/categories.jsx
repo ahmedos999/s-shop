@@ -18,7 +18,9 @@ export default function Categories() {
     icon:<IoIosPhonePortrait className='text-5xl'></IoIosPhonePortrait>,
     name:'Phones'    
 },
-{icon:<FaComputer className='text-5xl'></FaComputer>,
+{
+    id:6,  
+    icon:<FaComputer className='text-5xl'></FaComputer>,
     name:'Computer'    
 },
 {

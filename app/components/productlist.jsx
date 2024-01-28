@@ -17,9 +17,21 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { MdOutlinePreview } from "react-icons/md";
 import { useDraggable } from "react-use-draggable-scroll";
 import Link from 'next/link'
+import { UseDispatch, useDispatch, useSelector } from 'react-redux'
+import { UseSelector } from 'react-redux'
+import { addItem } from '../../redux/features/cart'
 
 
 export default function Productlist() {
+
+    const cart = useSelector((state)=>state.cart)
+
+    const dispatch = useDispatch()
+
+    const handleAdd=(item)=>{
+        dispatch(addItem(item))
+    }
+
     const ref = useRef();
     const {events} = useDraggable(ref)
 
@@ -53,7 +65,7 @@ export default function Productlist() {
                         <div className='p-1 rounded-sm bg-red-500 text-white absolute top-0 text-sm'>
                             -47%
                         </div>
-                        <MdFavoriteBorder className=' absolute top-0 right-0 text-2xl'/>
+                        <MdFavoriteBorder className=' absolute top-0 right-0 text-2xl' onClick={()=>handleAdd(e)}/>
                         <MdOutlinePreview className=' absolute top-10 right-0 text-2xl'/>
                         </div>
                         
